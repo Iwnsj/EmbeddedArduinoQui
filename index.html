@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f7f8f5">
+  <meta name="description" content="Learn Arduino one idea at a time. Explore history, boards, electronics, programming, sensors, and 64 practice questions with clear explanations.">
+  <title>Circuit Notes — Arduino Study Lab</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="data.js"></script>
+  <script defer src="core.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+    <a href="#overview" class="brand"><span class="brand-mark" aria-hidden="true">⌘</span><span>circuit notes<span class="brand-dot">.</span><small>THE ARDUINO STUDY LAB</small></span></a>
+    <div class="nav-label">YOUR WORKSPACE</div>
+    <nav id="navigation"></nav>
+    <div class="sidebar-bottom">
+      <div class="sidebar-progress"><div><span>Your learning journey</span><strong id="side-count">0 / 8</strong></div><div class="progress-track"><span id="side-bar"></span></div><small>One concept at a time.</small></div>
+      <a href="#sources" class="source-nav" id="source-nav">↗ &nbsp; Sources & references</a>
+      <p class="local-note">Made for curious minds.<br>Progress saved on this browser.</p>
+    </div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar">
+      <div class="breadcrumb"><button id="menu-toggle" class="icon-btn mobile-menu" aria-label="Open menu" aria-expanded="false">☰</button><span class="crumb-home">Study lab</span><span class="crumb-divider">/</span><span id="breadcrumb">Overview</span></div>
+      <form class="global-search" id="search-form" role="search"><span aria-hidden="true">⌕</span><input id="global-search" aria-label="Search lessons, boards and components" placeholder="Find a topic, board, or component…" autocomplete="off"><kbd>/</kbd></form>
+      <span class="student-badge" aria-label="Student workspace">S</span>
+    </header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="footer"><span>Circuit Notes <span class="footer-dot">·</span> An independent Arduino learning resource</span><a href="#sources">Built on official documentation ↗</a></footer>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="confirm-dialog"><form method="dialog"><span class="eyebrow">QUICK CHECK</span><h2 id="dialog-title"></h2><p id="dialog-description"></p><div class="button-row"><button value="cancel" class="btn secondary">Keep going</button><button value="confirm" class="btn primary" id="dialog-confirm">Confirm</button></div></form></dialog>
+  <noscript><p class="noscript">Please enable JavaScript to use the interactive lessons and quizzes.</p></noscript>
+</body>
+</html>
